@@ -1,4 +1,4 @@
-function repeatedCharacter(s: string): string {
+function repeatedCharacter(s: string): string | null {
     const seen = new Set<string>();
 
     for (const ch of s) {
@@ -8,5 +8,8 @@ function repeatedCharacter(s: string): string {
         seen.add(ch);
     }
 
-    return null; // if no repeated character
+    return null;
 }
+
+let answer=repeatedCharacter('abcc');
+console.log(answer);
